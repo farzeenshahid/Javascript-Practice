@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript Website</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <!--Changing HTML content-->
+    <h2>Change Content</h2>
+    <p id="ch-content">Javascript can change content of html</p>
+    <button type="button" onclick="document.getElementById('ch-content').innerHTML='Hello User!'">Click me!</button>
+    <!--Change HTML Attribute values-->
+    <h2>Change Attribute values</h2>
+    <p>Javascript can change values of HTML Attributes</p>
+    <button onclick="document.getElementById('bulb').src='Gallery/pic_bulbon.gif'">Turn on the light</button>
+    <img id="bulb" src="Gallery/pic_bulboff.gif" style="width: 100px;">
+    <button onclick="document.getElementById('bulb').src='Gallery/pic_bulboff.gif'">Turn off the light</button>
+    <!--Changing Html Style-->
+    <h2>Behavior of Javascript</h2>
+    <p id="behavior">Javascript can change style of html content like font-size and font-style.</p>
+    <button onclick="document.getElementById('behavior').style.fontSize='40px' ">Click Me</button>
+    <p style="font-weight: bold;">We can also hide and display content.</p>
+    <p id="display">Welcome User</p>
+    <button onclick="document.getElementById('display').style.display='none'">Hide</button>
+    <button onclick="document.getElementById('display').style.display='block'">Show</button>
+</body>
+
+</html>
